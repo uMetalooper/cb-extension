@@ -1,1 +1,1 @@
-# cb-extension
+# Cryptoblades Chrome extension
