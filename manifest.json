@@ -1,0 +1,17 @@
+{
+    "name": "CryptoBlades Extension+Market Analyzer",
+    "version": "1.0.0",
+    "description": "An extension to help play CryptoBlades.",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://app.cryptoblades.io/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "manifest_version": 2
+}
